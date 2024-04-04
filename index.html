@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorry</title>
+    <style>
+        body {
+            background-color: hsl(56, 100%, 75%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 480px;
+            height: 500px;
+            padding: 20px;
+            background-color: hsl(35, 100%, 75%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
+        }
+
+        .thankyou {
+            width: 480px;
+            height: 500px;
+            padding: 20px;
+            background-color: hsl(327, 58%, 81%);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 50%;
+            height: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        .options {
+            width: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .options button {
+            padding: 10px 20px;
+            font-size: 18px;
+            flex: 1; 
+        }
+
+        button {
+            
+            border: none;
+            padding: 7px;
+            background-color: hsl(10, 100%, 70%);
+            border-radius: 4px;
+    
+            width: 100px; /* Initial width */
+            height: 50px; /* Initial height */
+            transition: width 0.2s, height 0.2s; /* Smooth transition */
+        
+        }
+
+        button:hover {
+            background-color: hsl(10, 100%, 65%);
+            transition: background-color 0.3s ease; 
+        }
+
+      
+        img {
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="yesButton1" class="container">
+        <h1>Happy 20th Monthsary love</h1>
+        <img src="giphy.gif" alt="Sorry">
+        <h1>IM SORRY MY LOVE</h1>
+        <H2>PLS BATI NA TAYO?</H2>
+
+        <div class="options">
+            <button id="yesButton" class="button" onclick="goNe()">Yes</button>
+            <button id="noButton" class="button" onclick="decreaseNoSize()">No</button>
+            
+        </div>
+
+    </div>
+ 
+    <div id="show" class="thankyou">
+        <h1>I LOVE YOU SO MUCH BABY</h1>
+        <img class="kiki" src="kiki.webp" alt="Sorry">
+        <h1>babawi ako love promise</h1>
+    </div>
+
+ 
+<audio id="clickSound">
+
+  <source src="no-god-please-no-noooooooooo.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="clickSound2">
+
+    <source src="Mitski - My Love Mine All Mine[Lyric].mp3" type="audio/mpeg">
+  
+  </audio>
+  
+
+<script src="sound.js"></script>
+<script src="size.js"></script>
+<script>
+        function goNe(){
+            const gone = document.getElementById("yesButton1");
+            gone.style.display = "none";
+
+            const show = document.getElementById("show");
+            show.style.display = "flex";
+        }
+</script>   
+
+</body>
+</html>
